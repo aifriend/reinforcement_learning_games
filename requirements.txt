@@ -1,0 +1,8 @@
+numpy
+scipy
+tensorflow
+opencv-python
+matplotlib
+tensorboardx
+pandas
+gymnasium
