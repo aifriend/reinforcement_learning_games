@@ -1,4 +1,4 @@
-# Reinforcement Learning Tutorials:
+# Reinforcement Learning Games:
 
 PPO and PPO_CNN agents playing Pong-v0 game:<br>
 ![PPO agent](11_Pong-v0_PPO/gameplay.gif)
