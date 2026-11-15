@@ -1,14 +1,40 @@
 # Reinforcement Learning Games:
 
+This repository is adapted from [pythonlessons/Reinforcement_Learning](https://github.com/pythonlessons/Reinforcement_Learning).
+
 PPO and PPO_CNN agents playing Pong-v0 game:<br>
 ![PPO agent](11_Pong-v0_PPO/gameplay.gif)
 ![PPO CNN agent](11_Pong-v0_PPO/gameplay_CNN.gif)
 
 *2020-10-10 added LunarLander-v2_PPO Continuous code for Tensorflow 2.3.1*:
-![LunarLander-v2_PPO](https://github.com/pythonlessons/Reinforcement_Learning/blob/master/LunarLander-v2_PPO/gameplay.gif)
+![LunarLander-v2_PPO](LunarLander-v2_PPO/gameplay.gif)
 
 *2020-10-23 added BipedalWalker-v3_PPO code for Tensorflow 2.3.1*:
-![BipedalWalker-v3_PPO_PPO](https://github.com/pythonlessons/Reinforcement_Learning/blob/master/BipedalWalker-v3_PPO/gameplay.gif)
+![BipedalWalker-v3_PPO_PPO](BipedalWalker-v3_PPO/gameplay.gif)
+
+## Setup
+
+Install the dependencies listed in `requirements.txt` into a virtual environment:
+
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Usage
+
+Each folder is self-contained and holds one agent (for example `01_CartPole-reinforcement-learning/Cartpole_DQN.py`).
+The scripts take no command-line arguments. Run a script from inside its own folder, because model and image paths are relative:
+
+```
+cd 11_Pong-v0_PPO
+python Pong-v0_PPO_TF2.py
+```
+
+What the script does is chosen at the bottom of the file, in the `if __name__ == "__main__":` block.
+Uncomment the call you want, such as `agent.run()` to train or `agent.test(...)` to play with a saved model, and comment out the others.
+Trained models (`.h5`) and learning curves (`.png`) are stored in the same folders.
 
 1. [Deep Q Learning tutorial (DQN)](https://pylessons.com/CartPole-reinforcement-learning/)
 
