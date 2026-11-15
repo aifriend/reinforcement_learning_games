@@ -1,6 +1,6 @@
-numpy
+numpy<2
 scipy
-tensorflow
+tensorflow>=2.15,<2.16
 opencv-python
 matplotlib
 tensorboardx
